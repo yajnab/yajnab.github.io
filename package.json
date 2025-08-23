@@ -13,7 +13,8 @@
     "next": "^15.5.0",
     "prettier": "^3.6.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tech-stack-icons": "^3.3.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
