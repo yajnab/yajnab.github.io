@@ -33,12 +33,7 @@ export default function SkillsSection() {
   ];
 
   return (
-  <main className="relative w-full py-16 bg-gradient-to-b from-black via-purple-900 to-black overflow-hidden">
-      {/* Plasma Glow Background */}
-      <div className="absolute inset-0">
-        <div className="absolute w-[600px] h-[600px] bg-purple-500/20 rounded-full blur-3xl -top-40 -left-40" />
-        <div className="absolute w-[500px] h-[500px] bg-pink-500/20 rounded-full blur-3xl -bottom-32 -right-32" />
-      </div>
+  <main className="relative w-full py-16 bg-gray-900/50 overflow-hidden">
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-12">
@@ -54,7 +49,7 @@ export default function SkillsSection() {
               transition={{ delay: idx * 0.1, type: "spring" }}
               className="flex flex-col items-center"
             >
-              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-gray-900/50 border border-gray-800 shadow-lg hover:bg-gray-800/80 transition duration-300">
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-gray-800/50 border border-gray-800 shadow-lg hover:bg-gray-800/80 transition duration-300">
                 <Image
                   src={tech.logoUrl}
                   alt={tech.name}
@@ -63,7 +58,7 @@ export default function SkillsSection() {
                   className="object-contain"
                 />
               </div>
-              <span className="mt-2 text-sm font-semibold text-blue-400 dark:text-blue-300">{tech.name}</span>
+              <span className="mt-2 text-sm font-semibold text-gray-200">{tech.name}</span>
             </motion.div>
           ))}
         </div>
