@@ -5,17 +5,29 @@ import { motion } from 'framer-motion';
 
 const projects = [
 	{
-		title: 'E-commerce Dashboard',
-		description: 'A modern dashboard with dark mode, real-time charts, and responsive design',
+		title: 'Deep Learning Model for Image Classification',
+		description: 'A convolutional neural network (CNN) trained on a large dataset to classify images into various categories',
 		image: '/laptop.jpg',
-		tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
+		tags: ['Python', 'PyTorch', 'Keras', 'CNN'],
 	},
 	{
-		title: 'Social Media App',
-		description: 'Full-featured social platform with real-time messaging and notifications',
+		title: 'Urban Connectivity Analysis',
+		description: 'Analyzed urban connectivity using graph theory for Urban System Optimization',
 		image: '/code.jpg',
-		tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
+		tags: ['Python', 'NetworkX', 'Data Analysis'],
 	},
+	{
+		title: 'Rhino Temple Plugoin',
+		description: 'A custom suite of C#-based Grasshopper components designed to generate and parametrize architectural elements of Indian temples in both Nagara and Dravidian styles.',
+		image: '/workspace.jpg',
+		tags: ['C#', 'Grasshopper', 'Rhino3D'],
+	},
+	{
+		title: 'pySteel',
+		description: 'A Python library for structural steel design and analysis, adhering to international standards.',
+		image: '/robot.jpg',
+		tags: ['Python', 'Structural Engineering', 'Genetic Algorithms', "Optimization"],
+	}
 ];
 
 export default function ProjectsSection() {
