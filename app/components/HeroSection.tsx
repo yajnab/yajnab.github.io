@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 export default function HeroSection() {
-	const [selectedStack, setSelectedStack] = useState<'data' | 'ai' | 'os' | 'app'| null>(null);
+	const [selectedStack, setSelectedStack] = useState<'data' | 'ai' | 'os' | 'web'|'qa' |'app' |null>(null);
 
 	return (
 		<section className="min-h-screen relative overflow-hidden py-24 md:py-0">
@@ -23,7 +23,7 @@ export default function HeroSection() {
 							Building intelligent systems that drive efficiency and innovation across data, AI, OS, and application layers.
 						</p>
 						<p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-							Previously Principal Engineer at <span className="text-blue-400">DebahutiTech</span> and AI/QA at{''}
+							Previously Principal Engineer at <span className="text-blue-400">DebahutiTech</span> and AI/QA at {' '}
 							<span className="text-purple-400">4D</span>
 						</p>
 					</div>
@@ -129,27 +129,75 @@ export default function HeroSection() {
 									</li>
 								</ul>
 							</div>
-							{/* Application Layer */}
+							{/* Web Layer */}
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'os' ? 'bg-teal-500/20 border-teal-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+									selectedStack === 'web' ? 'bg-fuchsia-500/20 border-fuchsia-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
 								}`}
-								onMouseEnter={() => setSelectedStack('app')}
+								onMouseEnter={() => setSelectedStack('web')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-400">Application and Web</h3>
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-fuchsia-400">Web Applications</h3>
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
 									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										RPA Development
+										<div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" />
+										Backend Development
 									</li>
 									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+										<div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" />
 										ElectronJS Apps
 									</li>
 									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+										<div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" />
 										API Development
+									</li>
+								</ul>
+							</div>
+							{/* QA Layer */}
+							<div
+								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
+									selectedStack === 'qa' ? 'bg-orange-500/20 border-orange-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+								}`}
+								onMouseEnter={() => setSelectedStack('qa')}
+								onMouseLeave={() => setSelectedStack(null)}
+							>
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-orange-400">QA</h3>
+								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										RPA based QA
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										AI Integrated QA
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										Automation Frameworks
+									</li>
+								</ul>
+							</div>
+							{/* App */}
+							<div
+															className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
+																selectedStack === 'app' ? 'bg-emerald-500/20 border-emerald-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+															}`}
+								onMouseEnter={() => setSelectedStack('app')}
+								onMouseLeave={() => setSelectedStack(null)}
+							>
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-emerald-400">Application Development</h3>
+								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
+										Android Apps
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
+										Standalone Apps for Windows/Linux
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
+										Cross-Platform Apps
 									</li>
 								</ul>
 							</div>

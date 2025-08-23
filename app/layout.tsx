@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: '[Your Name] - AI and Automation Developer',
+	title: 'Yajnavalkya Bandyopadhyay - AI and Automation Developer',
 	description:
 		'Engineer, Researcher, and Builder -> crafting technology to empower people and reimagine systems.',
 	keywords: [
@@ -34,21 +34,21 @@ export const metadata: Metadata = {
 'Process Optimization',  
 'AI-Driven Applications',  
 'AI Research',
-		'[Your Name]',
+		'Yajnavalkya Bandyopadhyay',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'Yajnavalkya Bandyopadhyay' }],
+	creator: 'Yajnavalkya Bandyopadhyay',
 	openGraph: {
-		title: '[Your Name] - AI and Automation Portfolio',
+	title: 'Yajnavalkya Bandyopadhyay - AI and Automation Portfolio',
 		description: 'Engineer, Researcher, and Builder -> crafting technology to empower people and reimagine systems.',
 		url: 'yajnab.github.io',
-		siteName: '[Your Name] - Portfolio',
+	siteName: 'Yajnavalkya Bandyopadhyay - Portfolio',
 		images: [
 			{
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Frontend Developer Portfolio',
+				   alt: 'Yajnavalkya Bandyopadhyay - Frontend Developer with AI/QA Engineer Portfolio',
 			},
 		],
 		locale: 'en_US',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: '[Your Name] - AI and Automation Developer',
+		title: 'Yajnavalkya Bandyopadhyay - AI and Automation Developer',
 		description: 'Engineer, Researcher, and Builder -> crafting technology to empower people and reimagine systems.',
 		creator: '@yajnab',
 		images: ['/og-image.jpg'],
