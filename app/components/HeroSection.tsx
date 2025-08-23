@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import SkillsSection from './SkillsSection';
 
 export default function HeroSection() {
 	const [selectedStack, setSelectedStack] = useState<'data' | 'ai' | 'os' | 'web'|'qa' |'app' |null>(null);
@@ -15,7 +16,7 @@ export default function HeroSection() {
 			<div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-8 md:pt-0">
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8 md:mb-12">
 					<div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
-						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
+						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 leading-tight md:leading-[1.1] pt-2 md:pt-4 md:pb-2">
 							Yajnavalkya Bandyopadhyay
 						</h1>
 						<h2 className="text-2xl md:text-4xl font-bold text-white">AI and Automation Engineer</h2>
@@ -41,7 +42,7 @@ export default function HeroSection() {
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Linux Kernel</span>
 					</div>
 				</motion.div>
-
+				<SkillsSection />
 				{/* Interactive System Architecture */}
 				<div className="w-full max-w-5xl mx-auto relative px-2 md:px-4">
 					<motion.div
