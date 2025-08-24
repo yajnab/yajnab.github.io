@@ -51,7 +51,7 @@ export default function ContactSection() {
 								Get in Touch
 							</motion.a>
 							<motion.a
-								href="/resume.pdf"
+								href="/resume_aug.pdf"
 								target="_blank"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
@@ -70,7 +70,7 @@ export default function ContactSection() {
 						</div>
 						<div className="flex flex-wrap justify-center gap-6">
 							<motion.a
-								href="#"
+								href="https://github.com/yajnab"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
 								className="group flex items-center justify-center p-4 bg-gradient-to-r from-blue-500/10 to-blue-500/20 rounded-xl hover:from-blue-500/20 hover:to-blue-500/30 border border-blue-500/20 hover:border-blue-500/30 transition-all duration-300"
@@ -80,7 +80,7 @@ export default function ContactSection() {
 								</svg>
 							</motion.a>
 							<motion.a
-								href="#"
+								href="https://linkedin.com/in/yajnab"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
 								className="group flex items-center justify-center p-4 bg-gradient-to-r from-purple-500/10 to-purple-500/20 rounded-xl hover:from-purple-500/20 hover:to-purple-500/30 border border-purple-500/20 hover:border-purple-500/30 transition-all duration-300"
@@ -90,7 +90,7 @@ export default function ContactSection() {
 								</svg>
 							</motion.a>
 							<motion.a
-								href="#"
+								href="https://x.com/yajnab"
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
 								className="group flex items-center justify-center p-4 bg-gradient-to-r from-pink-500/10 to-pink-500/20 rounded-xl hover:from-pink-500/20 hover:to-pink-500/30 border border-pink-500/20 hover:border-pink-500/30 transition-all duration-300"

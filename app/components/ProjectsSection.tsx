@@ -20,28 +20,28 @@ export default function ProjectsBanner() {
       title: "Deep Learning Model for Image Classification",
       description:
         "A convolutional neural network (CNN) trained on a large dataset to classify images into various categories",
-      image: "/laptop.jpg",
-      tags: ["Python", "PyTorch", "Keras", "CNN"],
+      image: "/dl_seg.png",
+      tags: ["Python", "PyTorch", "TensorFlow", "Keras", "CNN"],
     },
     {
       title: "Urban Connectivity Analysis",
       description:
         "Analyzed urban connectivity using graph theory for Urban System Optimization",
-      image: "/code.jpg",
+      image: "/urban.png",
       tags: ["Python", "NetworkX", "Data Analysis"],
     },
     {
-      title: "Rhino Temple Plugin",
+      title: "Yali",
       description:
         "A custom suite of C#-based Grasshopper components designed to generate and parametrize architectural elements of Indian temples in both Nagara and Dravidian styles.",
-      image: "/workspace.jpg",
+      image: "/yali.png",
       tags: ["C#", "Grasshopper", "Rhino3D"],
     },
     {
       title: "pySteel",
       description:
         "A Python library for structural steel design and analysis, adhering to international standards.",
-      image: "/robot.jpg",
+      image: "/pysteel.png",
       tags: ["Python", "Structural Engineering", "Genetic Algorithms", "Optimization"],
     },
   ];

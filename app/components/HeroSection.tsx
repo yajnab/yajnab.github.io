@@ -19,7 +19,8 @@ export default function HeroSection() {
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 leading-tight md:leading-[1.1] pt-2 md:pt-4 md:pb-2">
 							Yajnavalkya Bandyopadhyay
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-white">AI and Automation Engineer</h2>
+						<h2 className="text-2xl md:text-4xl font-bold text-white">AI | Data | Embedded | QA</h2>
+						<h3 className="text-1xl md:text-2xl font-bold text-white">Civil | Earth Science | Mathematics | Architecture</h3>
 						<p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
 							Building intelligent systems that drive efficiency and innovation across data, AI, OS, and application layers.
 						</p>
