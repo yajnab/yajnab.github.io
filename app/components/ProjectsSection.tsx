@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { useLayoutEffect, useRef, useState } from "react";
+import { animate, motion, useAnimationFrame, useMotionValue, useTransform, wrap } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -45,24 +45,41 @@ export default function ProjectsBanner() {
       tags: ["Python", "Structural Engineering", "Genetic Algorithms", "Optimization"],
     },
   ];
-  const controls = useAnimation();
-  const [xPos, setXPos] = useState(0);
+const baseX = useMotionValue(0);
+const trackRef = useRef<HTMLDivElement>(null);
+const half = useRef(0);             // width of one set (px)
+const speed = useRef(100);          // px/sec (increase for faster scroll)
 
-  // auto-scrolling effect
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setXPos((prev) => prev - 1); // moves left slowly
-    }, 20);
-    return () => clearInterval(interval);
-  }, []);
+useLayoutEffect(() => {
+  const el = trackRef.current;
+  if (!el) return;
+  const calc = () => (half.current = el.scrollWidth / 2); // because we render two sets
+  calc();
+  const ro = new ResizeObserver(calc);
+  ro.observe(el);
+  return () => ro.disconnect();
+}, []);
 
-  useEffect(() => {
-    controls.start({ x: xPos });
-  }, [xPos, controls]);
+useAnimationFrame((t, delta) => {
+  const moveBy = (speed.current * delta) / 1000; // px to move this frame
+  baseX.set(baseX.get() - moveBy);
+});
 
-  // button handlers
-  const handleLeft = () => setXPos((prev) => prev + 100); // move right
-  const handleRight = () => setXPos((prev) => prev - 100); // move left
+const x = useTransform(baseX, (v) => {
+  const h = half.current || 1;
+  return `${wrap(-h, 0, v)}px`;  // wrap between [-half, 0]
+});
+const NUDGE = 180; // px; match one-card width-ish
+
+const handleLeft = () => {
+  const current = baseX.get();
+  animate(baseX, current + NUDGE, { duration: 0.5, ease: "easeOut" });
+};
+
+const handleRight = () => {
+  const current = baseX.get();
+  animate(baseX, current - NUDGE, { duration: 0.5, ease: "easeOut" });
+};
 
   return (
 	<div className="w-full max-w-5xl mx-auto py-6 relative px-2 md:px-4">
@@ -74,11 +91,11 @@ export default function ProjectsBanner() {
 	<div className="w-full max-w-5xl mx-auto relative px-2 md:px-4">
       {/* Banner View */}
       {!showAll ? (
-        <div className="overflow-hidden relative mt-4">
+        <div className="relative overflow-hidden relative mt-4 group">
           <motion.div
-            className="flex gap-6"
-            animate={controls}
-            transition={{ repeat: Infinity, type: "tween", ease: "linear", duration: 0.2 }}
+            className="flex gap-6 will-change-transform"
+            style={{ x }}
+            ref={trackRef}
           >
             {[...projects, ...projects].map((proj, i) => (
               <div
@@ -112,21 +129,26 @@ export default function ProjectsBanner() {
               </div>
             ))}
           </motion.div>
-		  {/* Left Button */}
-      <button
-        onClick={handleLeft}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white shadow-md p-2 rounded-full"
-      >
-        <ChevronLeft />
-      </button>
+		 <button
+    onClick={handleLeft}
+    className="absolute left-2 top-1/2 -translate-y-1/2 
+               bg-white hover:bg-gray-100 text-gray-700 
+               shadow-lg p-2 rounded-full 
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+  >
+    <ChevronLeft className="w-6 h-6" />
+  </button>
 
-      {/* Right Button */}
-      <button
-        onClick={handleRight}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white shadow-md p-2 rounded-full"
-      >
-        <ChevronRight />
-      </button>
+  {/* Right Button */}
+  <button
+    onClick={handleRight}
+    className="absolute right-2 top-1/2 -translate-y-1/2 
+               bg-white hover:bg-gray-100 text-gray-700 
+               shadow-lg p-2 rounded-full 
+               opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+  >
+    <ChevronRight className="w-6 h-6" />
+  </button>
         </div>
       ) : (
         // Grid View
