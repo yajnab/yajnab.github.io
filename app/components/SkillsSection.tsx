@@ -24,7 +24,7 @@ export default function SkillsSection() {
     { id: "postgresql", name: "PostgreSQL", logoUrl: "/icons/PostgresSQL.svg" },
     { id: "sqlite", name: "SQLite", logoUrl: "/icons/SQLite.svg" },
     { id: "android", name: "Android", logoUrl: "/icons/Android.svg" },
-    { id: "linux", name: "Linux", logoUrl: "/icons/Arch-Linux.svg" },
+    { id: "linux", name: "Linux", logoUrl: "/icons/Linux.svg" },
     { id: "opencv", name: "OpenCV", logoUrl: "/icons/OpenCV.svg" },
     { id: "keras", name: "Keras", logoUrl: "/icons/Keras.svg" },
     { id: "tensorflow", name: "TensorFlow", logoUrl: "/icons/TensorFlow.svg" },
@@ -36,7 +36,7 @@ export default function SkillsSection() {
   ];
 
   return (
-  <main className="relative w-full pt-6 pb-16 bg-gray-900/50 overflow-hidden">
+  <main className="relative w-full pt-1 pb-4 bg-gray-900/50 overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         {/* <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-12">
           My Tech Stack

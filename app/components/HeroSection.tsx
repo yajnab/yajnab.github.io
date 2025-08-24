@@ -14,7 +14,7 @@ export default function HeroSection() {
 			</div>
 
 			<div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-8 md:pt-0">
-				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8 md:mb-12">
+				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-2 md:mb-2">
 					<div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 leading-tight md:leading-[1.1] pt-2 md:pt-4 md:pb-2">
 							Yajnavalkya Bandyopadhyay
