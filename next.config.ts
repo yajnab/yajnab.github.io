@@ -1,12 +1,9 @@
-const isProd = process.env.NODE_ENV === 'production';
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export',
   images: {
-    unoptimized: true, // Disable default image optimization
+    unoptimized: true,
   },
-  assetPrefix: isProd ? '/yajnab.github.io/' : '',
-  basePath: isProd ? '/yajnab.github.io' : '',
-  output: 'export'
 };
 
-export default nextConfig;
+module.exports = nextConfig;
