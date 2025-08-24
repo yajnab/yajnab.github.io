@@ -2,10 +2,10 @@
   "name": "frontend-portfolio-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yajnab.github.io",
+  "homepage": "https://yajnab.github.io/yajnab.github.io",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d out --nojekyll",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
