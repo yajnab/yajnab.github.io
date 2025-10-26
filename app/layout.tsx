@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Yajnavalkya Bandyopadhyay - AI and Automation Developer',
+	title: 'Yajnavalkya Bandyopadhyay - Engineer, Researcher, and Builder',
 	description:
-		'Engineer, Researcher, and Builder -> crafting technology to empower people and reimagine systems.',
+		'Putting soul into technology -> Engineer, Researcher, and Builder crafting technology to empower people and reimagine systems.',
 	keywords: [
 		'Artificial Intelligence',  
 'Large Language Models (LLMs)',  
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Yajnavalkya Bandyopadhyay' }],
 	creator: 'Yajnavalkya Bandyopadhyay',
 	openGraph: {
-	title: 'Yajnavalkya Bandyopadhyay - AI and Automation Portfolio',
+	title: 'Yajnavalkya Bandyopadhyay - Engineer, Researcher, and Builder',
 		description: 'Engineer, Researcher, and Builder -> crafting technology to empower people and reimagine systems.',
 		url: 'yajnab.github.io',
 	siteName: 'Yajnavalkya Bandyopadhyay - Portfolio',
