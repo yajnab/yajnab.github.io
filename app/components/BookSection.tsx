@@ -16,7 +16,7 @@ export default function BooksBanner() {
 
   const projects: Books[] = [
     {
-      title: "Introduction to Fractional Calculus ",
+      title: "Introduction to Fractional Calculus",
       description:
         "Introduction to Fractional Calculus offers a comprehensive yet accessible entry point into the fascinating world of fractional-order calculus.",
       image: "https://m.media-amazon.com/images/I/51GWwGXN-1L._SL1499_.jpg",
@@ -186,7 +186,7 @@ const handleRight = () => {
     </div>
     {/* Header */}
       <div className="flex justify-center items-center py-4 px-6">
-        {/* <h2 className="text-xl font-bold">My Projects</h2> */}
+        {<h2 className="text-xl font-bold">My Books</h2>}
         <button
           onClick={() => setShowAll(!showAll)}
           className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition"
