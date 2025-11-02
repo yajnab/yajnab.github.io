@@ -5,7 +5,7 @@ import ProjectsSection from './components/ProjectsSection';
 // import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 import BookBanner from './components/BookSection';
-import { Book } from 'lucide-react';
+//import { Book } from 'lucide-react';
 
 export default function FrontendPortfolio() {
 	return (

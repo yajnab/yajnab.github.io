@@ -85,7 +85,9 @@ const handleRight = () => {
 	<div className="w-full max-w-5xl mx-auto py-6 relative px-2 md:px-4">
 	<div className="bg-gray-900/50 backdrop-blur-sm rounded-lg border border-gray-800 p-4 md:p-8"
 					>
-		
+		<h2 className="text-4xl font-bold mb-3 text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text py-1">
+								Highlighted Projects
+							</h2>
     <div className="w-full bg-gray-900 text-white relative">
       
 	<div className="w-full max-w-5xl mx-auto relative px-2 md:px-4">
