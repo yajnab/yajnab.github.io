@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection';
 import ProjectsSection from './components/ProjectsSection';
 // import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
-import BookBanner from './components/BookSection';
+//import BookBanner from './components/BookSection';
 //import { Book } from 'lucide-react';
 
 export default function FrontendPortfolio() {
@@ -13,7 +13,7 @@ export default function FrontendPortfolio() {
 			<HeroSection />
 			<ProjectsSection />
 			{/* <SkillsSection /> */}
-			<BookBanner />
+			{/* <BookBanner /> */}
 			<ContactSection />
 		</main>
 	);
