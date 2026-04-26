@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://yajnab.github.io/yajnab.github.io'),
 	title: 'Yajnavalkya Bandyopadhyay - Engineer, Researcher, and Builder',
 	description:
 		'Putting soul into technology -> Engineer, Researcher, and Builder crafting technology to empower people and reimagine systems.',
@@ -40,8 +41,8 @@ export const metadata: Metadata = {
 	openGraph: {
 	title: 'Yajnavalkya Bandyopadhyay - Engineer, Researcher, and Builder',
 		description: 'Engineer, Researcher, and Builder -> crafting technology to empower people and reimagine systems.',
-		url: 'yajnab.github.io',
-	siteName: 'Yajnavalkya Bandyopadhyay - Portfolio',
+		url: 'https://yajnab.github.io/yajnab.github.io',
+		siteName: 'Yajnavalkya Bandyopadhyay - Portfolio',
 		images: [
 			{
 				url: '/og-image.jpg',
