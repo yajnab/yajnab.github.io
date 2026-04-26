@@ -94,15 +94,23 @@ export default function HeroSection() {
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Model Development & Training
+										Azure, AWS and GCP GenAI Solutions
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										NLP & Computer Vision
+										Text and Vision Model
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										AI Integration
+										Vector and Graph Databases
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+										MCP, Langgraph and ADK
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+										Secured RAG Systems
 									</li>
 								</ul>
 							</div>
@@ -152,6 +160,54 @@ export default function HeroSection() {
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-fuchsia-500 rounded-full" />
 										API Development
+									</li>
+								</ul>
+							</div>
+							{/* Cloud Layer */}
+							<div
+								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
+									selectedStack === 'qa' ? 'bg-orange-500/20 border-orange-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+								}`}
+								onMouseEnter={() => setSelectedStack('qa')}
+								onMouseLeave={() => setSelectedStack(null)}
+							>
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-orange-400">Cloud</h3>
+								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										Azure
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										Amazon Web Services
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										Google Cloud Platform
+									</li>
+								</ul>
+							</div>
+							{/* Domain */}
+							<div
+								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
+									selectedStack === 'qa' ? 'bg-orange-500/20 border-orange-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+								}`}
+								onMouseEnter={() => setSelectedStack('qa')}
+								onMouseLeave={() => setSelectedStack(null)}
+							>
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-orange-400">Domain</h3>
+								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										Healthcare
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										Ed-Tech
+									</li>
+									<li className="flex items-center gap-2">
+										<div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+										Fin-Tech
 									</li>
 								</ul>
 							</div>
