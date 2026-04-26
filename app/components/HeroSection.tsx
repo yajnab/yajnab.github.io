@@ -155,7 +155,7 @@ export default function HeroSection() {
 									</li>
 								</ul>
 							</div>
-							{/* QA Layer */}
+							{/* QA Layer
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
 									selectedStack === 'qa' ? 'bg-orange-500/20 border-orange-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
@@ -178,8 +178,8 @@ export default function HeroSection() {
 										Automation Frameworks
 									</li>
 								</ul>
-							</div>
-							{/* App */}
+							</div> */}
+							{/* App
 							<div
 															className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
 																selectedStack === 'app' ? 'bg-emerald-500/20 border-emerald-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
@@ -202,7 +202,7 @@ export default function HeroSection() {
 										Cross-Platform Apps
 									</li>
 								</ul>
-							</div>
+							</div> */}
 						</div>
 					</motion.div>
 				</div>
