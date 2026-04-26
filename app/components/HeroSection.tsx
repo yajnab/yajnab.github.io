@@ -19,24 +19,24 @@ export default function HeroSection() {
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 leading-tight md:leading-[1.1] pt-2 md:pt-4 md:pb-2">
 							Yajnavalkya Bandyopadhyay
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-white">AI | Data | Embedded | QA</h2>
-						<h3 className="text-1xl md:text-2xl font-bold text-white">Civil | Earth Science | Mathematics | Architecture</h3>
+						<h2 className="text-2xl md:text-4xl font-bold text-white">AI | Data | Embedded</h2>
+						<h3 className="text-1xl md:text-2xl font-bold text-white">Applied AI | LLM | Architecture</h3>
 						<p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
 							Building intelligent systems that drive efficiency and innovation across data, AI, OS, and application layers.
 						</p>
 						<p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-							Previously Principal Engineer at <span className="text-blue-400">DebahutiTech</span> and AI/QA at {' '}
-							<span className="text-purple-400">4D</span>
+							Previously CTO at <span className="text-blue-400">DebahutiTech</span> and AI Technical Lead at {' '}
+							<span className="text-purple-400">Wipro</span>
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">PyTorch</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">TensorFlow</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Azure</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">LangGraph</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-400 text-xs md:text-sm">HuggingFace</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">OpenCV</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">NLTK</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">MCP</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">Text Model</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Linux Kernel</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">TinyML</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">Vision Model</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-400 text-xs md:text-sm">Android</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Embedded</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">GCP</span>

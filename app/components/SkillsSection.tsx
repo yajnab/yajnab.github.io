@@ -26,12 +26,12 @@ export default function SkillsSection() {
     { id: "android", name: "Android", logoUrl: "/icons/Android.svg" },
     { id: "linux", name: "Linux", logoUrl: "/icons/Linux.svg" },
     { id: "opencv", name: "OpenCV", logoUrl: "/icons/OpenCV.svg" },
-    { id: "keras", name: "Keras", logoUrl: "/icons/Keras.svg" },
+    { id: "GCP", name: "Google Cloud Platform", logoUrl: "/icons/Google-Cloud.svg" },
     { id: "tensorflow", name: "TensorFlow", logoUrl: "/icons/TensorFlow.svg" },
     { id: "pytorch", name: "PyTorch", logoUrl: "/icons/PyTorch.svg" },
     { id: "typescript", name: "TypeScript", logoUrl: "/icons/TypeScript.svg" },
     { id: "electron", name: "Electron", logoUrl: "/icons/Electron.svg" },
-    { id: "playwright", name: "Playwright", logoUrl: "/icons/Playwrite.svg" },
+    { id: "azure", name: "Azure", logoUrl: "/icons/Azure.svg" },
     { id: "aws", name: "AWS", logoUrl: "/icons/AWS.svg" },
   ];
 
